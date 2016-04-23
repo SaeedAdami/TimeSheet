@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="styles/bootstrap.css" rel="stylesheet" />
+    <link href="styles/modify.css" rel="stylesheet" />
+
+    <script src="scripts/jquery-2.2.1.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/variables.js"></script>
+    <script src="scripts/validation.js"></script>
+    <script src="scripts/utility.js"></script>
+
+    <style type="text/css">
+        #txtUserName,
+        #txtPassword {
+            direction: ltr;
+            width: 94%;
+        }
+
+        #btnLogin, #btnDirect {
+            width: 94%;
+        }
+
+        #imgKey {
+            height: 130px;
+        }
+    </style>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div class="panel panel-info" style="height:103%;">
+        <div class="panel-heading">ورود به برنامه</div>
+        <div class="panel-body">
+            <div class="row">
+                <p>
+                    <img id="imgKey" src="images/key.png" />
+                </p>
+                <p>
+                    <input id="txtUserName" type="text" maxlength="4" placeholder="نام کاربری" />
+                </p>
+                <p>
+                    <input id="txtPassword" type="password" maxlength="10" placeholder="رمز عبور" />
+                </p>
+                <p>
+                    <input id="btnLogin" type="button" value="ورود " class="btn btn-info" />
+                </p>
+                <p>
+                    <input id="btnDirect" type="button" value="ورود بدون رمز" class="btn btn-warning" />
+                </p>
+            </div>
+            <div id="divMessage" class="alert small"></div>
+            <div id="divVersion" class="alert alert-success alert-dismissible" role="alert">
+                <strong>ثبت کارکرد</strong> - نسخه 1.0.0.0
+                <p>
+                    کلیه حقوق مادی و معنوی نرم افزار فوق, متعلق به شرکت فراست افزار می باشد.
+                </p>
+                <p>
+                    تکنولوژی های بکار رفته در تولید برنامه شامل آخرین نسخ مربوط به <span style="font-family: Tahoma">Android 6.0 (API 24), ASP.NET Web API v4.5.2, EntityFrameWork v6.1.2, HTML 5.0, CSS 3.0, BootStrap v3.3.5, jQuery v2.2.1</span> می باشد.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

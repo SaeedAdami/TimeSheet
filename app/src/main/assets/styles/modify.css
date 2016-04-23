@@ -1,0 +1,178 @@
+﻿@font-face {
+    font-family: 'iransanz';
+    src: url('../fonts/iransansz-webfont.ttf') format('truetype');
+}
+
+html {
+    height: 98%;
+    direction: rtl;
+    background-color: black;
+}
+
+body {
+    font-family: 'iransanz';
+    margin: 10px;
+    background-color: black;
+}
+
+/*navbar*/
+.navbar-nav {
+    float: right;
+    direction: rtl;
+}
+
+.dropdown-menu {
+    text-align: right !important;
+}
+
+.dropdown-menu {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    left: -56px;
+}
+
+.navbar-default,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a,
+.dropdown-header,
+.dropdown-menu .divider,
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: white;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    font-size: 1.0em;
+    line-height: 16px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+    border-color: #4cae4c;
+}
+
+.navbar-collapse collapse in {
+    direction: rtl;
+}
+
+/*panel*/
+.panel {
+    direction: rtl;
+}
+
+    .panel > .panel-heading {
+        font-size: 12pt;
+        color: #fff;
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+    }
+
+        .panel > .panel-heading > div > .row > div > span {
+            font-size: medium;
+        }
+
+.row > p {
+    text-align: center;
+}
+
+.panel > .panel-body > div > .row {
+    padding: 7px;
+}
+
+
+/*input*/
+
+input[type=text],
+input[type=password] {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    border-radius: 4px;
+    color: #555;
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+input[type="button"] {
+    font-size: 14px;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+/*hidden and visible*/
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+/*alert*/
+.alert {
+    padding: 8px;
+    margin-bottom: 14px;
+}
+
+/*grid*/
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th {
+    background: #337AB7 none repeat scroll 0% 0%;
+    color: #FFF;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table > tbody > tr > td {
+    padding: 5px;
+}
+
+.table > tbody > tr > .noresult {
+    padding: 12px;
+}
+
+/* grid commands */
+.table-bordered > tbody > tr > td > img {
+    float: left;
+    vertical-align: bottom;
+}
+
+    .table-bordered > tbody > tr > td > img[src='images/check.png'] {
+        float: none;
+        vertical-align: bottom;
+    }
+
+.table-bordered > tbody > tr > td:last-of-type img {
+    padding-right: 12px;
+}
+
+/*select*/
+select {
+    vertical-align: middle;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    width: 220px;
+    border-radius: 4px;
+    color: #555;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 4px 6px;
+}
