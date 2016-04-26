@@ -6,13 +6,11 @@
 html {
     height: 98%;
     direction: rtl;
-    background-color: black;
 }
 
 body {
     font-family: 'iransanz';
     margin: 10px;
-    background-color: black;
 }
 
 /*navbar*/
@@ -146,21 +144,6 @@ input[type="button"] {
 
 .table > tbody > tr > .noresult {
     padding: 12px;
-}
-
-/* grid commands */
-.table-bordered > tbody > tr > td > img {
-    float: left;
-    vertical-align: bottom;
-}
-
-    .table-bordered > tbody > tr > td > img[src='images/check.png'] {
-        float: none;
-        vertical-align: bottom;
-    }
-
-.table-bordered > tbody > tr > td:last-of-type img {
-    padding-right: 12px;
 }
 
 /*select*/

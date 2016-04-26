@@ -193,7 +193,7 @@ function Select(token, userId, calendarId, year, month) {
 
             if (data == null || data.length == 0) {
                 var html = "<tr>";
-                html += "       <td colspan='5' class='noresult'>";
+                html += "       <td colspan='9' class='noresult'>";
                 html += "           رکوردی یافت نگردید.";
                 html += "       </td>";
                 html += "   </tr>";
@@ -203,17 +203,36 @@ function Select(token, userId, calendarId, year, month) {
             }
 
             $.each(data, function (i, item) {
+
                 var html = "<tr" + ToString(item) + ">";
-                html += "       <td colspan='5'>";
-                html += item.Day + " " + item.WeekDayDescription;
-                if (item.WorkTime != "00:00") {
-                    html += " - " + item.EntryTime + " الی " + item.ExitTime + " - " + item.ProjectName + " - جمع " + item.WorkTime;
-                }
+                html += "       <td>";
+                html += "           <img src='images/pen.png' />";
+                html += "       </td>";
+                html += "       <td>";
+                html += "           <img src='images/garbage.png' />";
+                html += "       </td>";
+                html += "       <td>";
+                html += item.Day
+                html += "       </td>";
+                html += "       <td>";
+                html += item.WeekDayDescription;
+                html += "       </td>";
+                html += "       <td>";
+                html += item.ProjectName;
+                html += "       </td>";
+                html += "       <td>";
+                html += item.EntryTime;
+                html += "       </td>";
+                html += "       <td>";
+                html += item.ExitTime;
+                html += "       </td>";
+                html += "       <td>";
+                html += item.WorkTime;
+                html += "       </td>";
+                html += "       <td>";
                 if (item.IsMission == true) {
                     html += "<img src='images/check.png' />";
                 }
-                html += "           <img src='images/pen.png' />";
-                html += "           <img src='images/garbage.png' />";
                 html += "       </td>";
                 html += "   </tr>";
 
@@ -629,17 +648,37 @@ function btnRegister_Click() {
 
 
         //remove old td
-        tr.find('td:first').remove();
+        tr.find('td').remove();
 
-        //insert new td
-        var html = "       <td colspan='5'>";
-        html += day + " " + weekdayDescription;
-        html += " - " + entryTime + " الی " + exitTime + " - " + projectName + " - جمع " + workTime;
+        //insert new tds
+        var html = "       <td>";
+        html += "           <img src='images/pen.png' />";
+        html += "       </td>";
+        html += "       <td>";
+        html += "           <img src='images/garbage.png' />";
+        html += "       </td>";
+        html += "       <td>";
+        html += day;
+        html += "       </td>";
+        html += "       <td>";
+        html += weekdayDescription;
+        html += "       </td>";
+        html += "       <td>";
+        html += projectName;
+        html += "       </td>";
+        html += "       <td>";
+        html += entryTime;
+        html += "       </td>";
+        html += "       <td>";
+        html += exitTime;
+        html += "       </td>";
+        html += "       <td>";
+        html += workTime;
+        html += "       </td>";
+        html += "       <td>";
         if (isMission == true) {
             html += "<img src='images/check.png' />";
         }
-        html += "           <img src='images/pen.png' />";
-        html += "           <img src='images/garbage.png' />";
         html += "       </td>";
 
         tr.append(html);
@@ -690,12 +729,35 @@ function btnConfirmDelete_Click() {
         tr.attr('workMinute', '0');
         tr.attr('workTime', '00:00');
 
-        tr.find('td').first().remove();
+        tr.find('td').remove();
 
         var html = "       <td colspan='5'>";
         html += day + " " + tr.attr('WeekDayDescription');
         html += "           <img src='images/pen.png' />";
         html += "           <img src='images/garbage.png' />";
+        html += "       </td>";
+
+        var html = "       <td>";
+        html += "           <img src='images/pen.png' />";
+        html += "       </td>";
+        html += "       <td>";
+        html += "           <img src='images/garbage.png' />";
+        html += "       </td>";
+        html += "       <td>";
+        html += day
+        html += "       </td>";
+        html += "       <td>";
+        html += tr.attr('WeekDayDescription');
+        html += "       </td>";
+        html += "       <td>";
+        html += "       </td>";
+        html += "       <td>";
+        html += "       </td>";
+        html += "       <td>";
+        html += "       </td>";
+        html += "       <td>";
+        html += "       </td>";
+        html += "       <td>";
         html += "       </td>";
 
         tr.append(html);

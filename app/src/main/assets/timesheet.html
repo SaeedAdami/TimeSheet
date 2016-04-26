@@ -17,299 +17,325 @@
 
         #ddlYear,
         #ddlMonth {
-            width: 28%;
+        width: 28%;
         }
 
         #btnSearch {
-            width: 33%;
-            padding: 4px 6px;
+        width: 33%;
+        padding: 4px 6px;
         }
 
         .table-bordered > tbody > tr > td > img[src="images/check.png"] {
-            padding-right: 5px;
+        padding-right: 5px;
         }
 
         #main {
-            height: 100%;
+        height: 100%;
         }
 
         /*edit form*/
-        #ddlProjectYear {
-            width: 123px;
-            min-width: 149px;
-        }
-
-        #ddlProjectGroup {
-            min-width: 229px;
-        }
-
-        #ddlProject {
-            min-width: 252px;
-        }
-
         #ddlEntryMinute, #ddlEntryHour, #ddlExitMinute, #ddlExitHour {
-            width: 60px;
-            min-width: 60px;
+        width: 60px;
+        min-width: 60px;
         }
         #btnRegister {
-            width: 75px;
+        width: 75px;
         }
     </style>
     <meta charset="utf-8" />
 </head>
 <body id="main">
 
-    <div class="panel panel-success">
-        <!--<div id="divHeader" class="panel-heading">جستجوی ساعت کارکرد</div>-->
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a id="lnkUserInfo" class="navbar-brand" href="#">جستجوی ساعت کارکرد</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="login.html">خروج</a></li>
-                        <li><a href="login.html">تغییر رمز</a></li>
-                        <!--roles="Administrator"-->
-                        <li class="dropdown" id="operationMenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">عملیات <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="login.html">اطلاعیه</a></li>
-                                <li><a href="login.html">تنظیمات سیستم</a></li>
-                            </ul>
-                        </li>
-                        <!--roles="Administrator"-->
-                        <li class="dropdown" id="reportMenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">گزارشات <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="login.html">گزارش ماهیانه</a></li>
-                                <li><a href="login.html">گزارش روزانه</a></li>
-                            </ul>
-                        </li>
-                        <!--roles="Administrator,Manager"-->
-                        <li class="dropdown" id="reportMenu2">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">سرپرستی <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="login.html">تایید کارکرد روزانه پرسنل</a></li>
-                                <li><a href="login.html">گزارش ماهیانه کارکنان</a></li>
-                                <li><a href="login.html">گزارش روزانه کارکنان</a></li>
-                                <li><a href="login.html">گزارش وضعیت پروژه ها</a></li>
-                            </ul>
-                        </li>
-                        <!--roles="Signatory"-->
-                        <li class="dropdown" id="signatoryMenu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">مدیریت<span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="login.html">گزارش ماهیانه کارکنان</a></li>
-                                <li><a href="login.html">گزارش روزانه کارکنان</a></li>
-                                <li><a href="login.html">گزارش وضعیت پروژه ها</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="timesheet.html">ثبت کارکرد</a></li>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="lnkUserInfo" class="navbar-brand" href="#">جستجوی ساعت کارکرد</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="login.html">خروج</a></li>
+                <li><a href="login.html">تغییر رمز</a></li>
+                <!--roles="Administrator"-->
+                <li class="dropdown" id="operationMenu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">عملیات <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="login.html">اطلاعیه</a></li>
+                        <li><a href="login.html">تنظیمات سیستم</a></li>
                     </ul>
-                </div>
-                <!--/.nav-collapse -->
-            </div>
-        </nav>
-        <div class="panel-body">
+                </li>
+                <!--roles="Administrator"-->
+                <li class="dropdown" id="reportMenu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">گزارشات <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="login.html">گزارش ماهیانه</a></li>
+                        <li><a href="login.html">گزارش روزانه</a></li>
+                    </ul>
+                </li>
+                <!--roles="Administrator,Manager"-->
+                <li class="dropdown" id="reportMenu2">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">سرپرستی <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="login.html">تایید کارکرد روزانه پرسنل</a></li>
+                        <li><a href="login.html">گزارش ماهیانه کارکنان</a></li>
+                        <li><a href="login.html">گزارش روزانه کارکنان</a></li>
+                        <li><a href="login.html">گزارش وضعیت پروژه ها</a></li>
+                    </ul>
+                </li>
+                <!--roles="Signatory"-->
+                <li class="dropdown" id="signatoryMenu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">مدیریت<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="login.html">گزارش ماهیانه کارکنان</a></li>
+                        <li><a href="login.html">گزارش روزانه کارکنان</a></li>
+                        <li><a href="login.html">گزارش وضعیت پروژه ها</a></li>
+                    </ul>
+                </li>
+                <li><a href="timesheet.html">ثبت کارکرد</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
 
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-9">
             <div id="divMessage" class="alert small"></div>
-
-            <div id="divSearch" class="hidden">
-                <p>
-                    <select id="ddlMonth">
-                        <option selected="selected" value="1">01</option>
-                        <option value="2">02</option>
-                        <option value="3">03</option>
-                        <option value="4">04</option>
-                        <option value="5">05</option>
-                        <option value="6">06</option>
-                        <option value="7">07</option>
-                        <option value="8">08</option>
-                        <option value="9">09</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                    </select>
-                    <select id="ddlYear">
-                    </select>
-                    <input id="btnSearch" value="جستجو" class="btn btn-info" type="submit">
-                </p>
-                <div class="row">
-                    <!-- Table -->
-                    <table id="gvSearch" class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>روز</th>
-                                <th>ثبت</th>
-                                <th>کار</th>
-                                <th>کارکرد</th>
-                                <th>عملیات</th>
-                            </tr>
-                        </thead>
-                        <tbody id="resultBody"></tbody>
-                    </table>
-                </div>
+        </div>
+    </div>
+    <!--Search Tab-->
+    <div id="divSearch" class="hidden">
+        <div class="row">
+            <div class="col-md-3">
             </div>
-
-            <div id="divEdit" class="">
-                <div class="row">
-                    <span>سال مورد رسیدگی </span>&nbsp;
-                    <select id="ddlProjectYear">
-                    </select>
-                </div>
-                <div class="row">
-                    <span>نوع کار</span>&nbsp;
-                    <select id="ddlProjectGroup">
-                    </select>
-                </div>
-                <div class="row">
-                    <span>کار</span>&nbsp;
-                    <select id="ddlProject">
-                    </select>
-                </div>
-                <div class="row">
-                    <span>ساعت ورود </span>&nbsp;&nbsp;
-                    <select id="ddlEntryMinute">
-                        <option value="00"></option>
-                        <option value="05">05</option>
-                        <option value="10">10</option>
-                        <option value="15">15</option>
-                        <option value="20">20</option>
-                        <option value="25">25</option>
-                        <option value="30">30</option>
-                        <option value="35">35</option>
-                        <option value="40">40</option>
-                        <option value="45">45</option>
-                        <option value="50">50</option>
-                        <option value="55">55</option>
-                    </select>
-                    <select id="ddlEntryHour">
-                        <option value="00"></option>
-                        <option value="01">01</option>
-                        <option value="02">02</option>
-                        <option value="03">03</option>
-                        <option value="04">04</option>
-                        <option value="05">05</option>
-                        <option value="06">06</option>
-                        <option value="07">07</option>
-                        <option value="08">08</option>
-                        <option value="09">09</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                    </select>
-                </div>
-                <div class="row">
-                    <span>ساعت خروج </span>&nbsp;
-                    <select id="ddlExitMinute">
-                        <option value="00"></option>
-                        <option value="05">05</option>
-                        <option value="10">10</option>
-                        <option value="15">15</option>
-                        <option value="20">20</option>
-                        <option value="25">25</option>
-                        <option value="30">30</option>
-                        <option value="35">35</option>
-                        <option value="40">40</option>
-                        <option value="45">45</option>
-                        <option value="50">50</option>
-                        <option value="55">55</option>
-                    </select>
-                    <select id="ddlExitHour">
-                        <option value="00"></option>
-                        <option value="01">01</option>
-                        <option value="02">02</option>
-                        <option value="03">03</option>
-                        <option value="04">04</option>
-                        <option value="05">05</option>
-                        <option value="06">06</option>
-                        <option value="07">07</option>
-                        <option value="08">08</option>
-                        <option value="09">09</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                    </select>
-                </div>
-                <div class="row">
-                    <span>مـــاموریت</span>&nbsp;&nbsp;&nbsp;
-                    <input id="chkMission" type="checkbox">
-                </div>
-                <div class="row">
-                    <input id="btnRegister" value="ثبت" class="btn btn-success" type="button">
-                    <input id="btnBack" value="بازگشت" class="btn btn-default" type="button">
-                    <!--<input id="btnNew" value="کار جدید" class="btn btn-warning" type="button">-->
-                </div>
+            <div class="col-md-9">
+                <select id="ddlMonth">
+                    <option selected="selected" value="1">01</option>
+                    <option value="2">02</option>
+                    <option value="3">03</option>
+                    <option value="4">04</option>
+                    <option value="5">05</option>
+                    <option value="6">06</option>
+                    <option value="7">07</option>
+                    <option value="8">08</option>
+                    <option value="9">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select id="ddlYear"></select>
+                <input id="btnSearch" value="جستجو" class="btn btn-info" type="submit">
             </div>
-
-            <div id="divDelete">
-                <div class="row">
-                    <br />
-                </div>
-                <div class="row">
-                    <br />
-                </div>
-                <div class="row">
-                    <span id="spanDeleteMessage">آیا از حذف کارکرد مورد نظر اطمینان دارید؟</span>
-                </div>
-                <div class="row">
-                    <input id="btnConfirmDelete" value="حذف" class="btn btn-info" type="button">
-                    <input id="btnCancelDelete" value="انصراف" type="button" class="btn btn-warning btn" />
-                </div>
-            </div>
-
-            <div class="row">
-                <br />
-            </div>
-            <div id="divVersion" class="alert alert-success alert-dismissible" role="alert">
-                <strong>ثبت کارکرد</strong> - نسخه 1.0.0.0
-                <p>
-                    کلیه حقوق مادی و معنوی نرم افزار فوق, متعلق به شرکت فراست افزار می باشد.
-                </p>
-                <p>
-                    تکنولوژی های بکار رفته در تولید برنامه شامل آخرین نسخ مربوط به <span style="font-family: Tahoma">Android 6.0 (API 24), ASP.NET Web API v4.5.2, EntityFrameWork v6.1.2, HTML 5.0, CSS 3.0, BootStrap v3.3.5, jQuery v2.2.1</span> می باشد.
-                </p>
+        </div>
+        <br />
+        <div class="row">
+            <div class="table-responsive">
+                <!-- Table -->
+                <table id="gvSearch" class="table table-bordered table-striped">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>روز</th>
+                        <th>ایام هفته</th>
+                        <th>کار</th>
+                        <th>ورود</th>
+                        <th>خروج</th>
+                        <th>کارکرد</th>
+                        <th>ماموریت</th>
+                    </tr>
+                    </thead>
+                    <tbody id="resultBody"></tbody>
+                </table>
             </div>
         </div>
     </div>
 
-    <input type="hidden" id="ProjectId" value="0" />
-    <input type="hidden" id="Year" value="0" />
-    <input type="hidden" id="Month" value="0" />
-    <input type="hidden" id="Day" value="0" />
-    <input type="hidden" id="TaskId" value="0" />
+    <!--Edit Tab-->
+    <div id="divEdit" class="">
+        <div class="row">
+            <div class="col-md-3">
+                <span>سال مورد رسیدگی </span>
+            </div>
+            <div class="col-md-9">
+                <select id="ddlProjectYear"></select>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-3">
+                <span>نوع کار</span>
+            </div>
+            <div class="col-md-9">
+                <select id="ddlProjectGroup"></select>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-3">
+                <span>کار</span>
+            </div>
+            <div class="col-md-9">
+                <select id="ddlProject"></select>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-3">
+                <span>ساعت ورود </span>
+            </div>
+            <div class="col-md-9">
+                <select id="ddlEntryMinute">
+                    <option value="00"></option>
+                    <option value="05">05</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                    <option value="35">35</option>
+                    <option value="40">40</option>
+                    <option value="45">45</option>
+                    <option value="50">50</option>
+                    <option value="55">55</option>
+                </select>
+                <select id="ddlEntryHour">
+                    <option value="00"></option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                </select>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-3">
+                <span>ساعت خروج </span>
+            </div>
+            <div class="col-md-9">
+                <select id="ddlExitMinute">
+                    <option value="00"></option>
+                    <option value="05">05</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                    <option value="35">35</option>
+                    <option value="40">40</option>
+                    <option value="45">45</option>
+                    <option value="50">50</option>
+                    <option value="55">55</option>
+                </select>
+                <select id="ddlExitHour">
+                    <option value="00"></option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                </select>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-3">
 
-    <script src="timesheet.js"></script>
+            </div>
+            <div class="col-md-9">
+                <span>مـــاموریت</span>
+                <input id="chkMission" type="checkbox">
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-9">
+                <input id="btnRegister" value="ثبت" class="btn btn-success" type="button">
+                <input id="btnBack" value="بازگشت" class="btn btn-default" type="button">
+                <!--<input id="btnNew" value="کار جدید" class="btn btn-warning" type="button">-->
+            </div>
+        </div>
+    </div>
+
+    <!--Delete Tab-->
+    <div id="divDelete">
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-9">
+                <span id="spanDeleteMessage">آیا از حذف کارکرد مورد نظر اطمینان دارید؟</span>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-9">
+                <input id="btnConfirmDelete" value="حذف" class="btn btn-info" type="button">
+                <input id="btnCancelDelete" value="انصراف" type="button" class="btn btn-warning btn" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<input type="hidden" id="ProjectId" value="0" />
+<input type="hidden" id="Year" value="0" />
+<input type="hidden" id="Month" value="0" />
+<input type="hidden" id="Day" value="0" />
+<input type="hidden" id="TaskId" value="0" />
+
+<script src="timesheet.js"></script>
 </body>
 </html>
